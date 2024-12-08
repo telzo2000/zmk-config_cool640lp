@@ -1,0 +1,67 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define DEFAULT 0
+#define NUM_SYM 1
+#define NAV     2
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <225>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+    combos {
+        compatible = "zmk,combos";
+        combo_btclr {
+            timeout-ms = <50>;
+            layers = <BLURGB>;
+            key-positions = <0 1>;
+            bindings = <&bt BT_CLR>;
+        };
+    };
+};
+
+
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+    &kp Q      &kp W      &kp E       &kp R       &kp T  &kp Y  &kp U       &kp I       &kp O      &kp P
+    &kp A      &kp S      &kp D       &kp F       &kp G  &kp H  &kp J       &kp K       &kp L      &kp RET
+    &kp Z      &kp X      &kp C       &kp V       &kp B  &kp N  &kp M       &kp COMMA   &kp DOT    &kp LSHFT
+    &kp 1      &kp 2      &kp 3       &kp 4       &kp 5  &kp 6  &kp 7       &kp 8       &kp 9      &kp 0
+            >;
+        };
+        num_sym {
+            bindings = <
+    &kp Q      &kp W      &kp E       &kp R       &kp T  &kp Y  &kp U       &kp I       &kp O      &kp P
+    &kp A      &kp S      &kp D       &kp F       &kp G  &kp H  &kp J       &kp K       &kp L      &kp RET
+    &kp Z      &kp X      &kp C       &kp V       &kp B  &kp N  &kp M       &kp COMMA   &kp DOT    &kp LSHFT
+    &kp 1      &kp 2      &kp 3       &kp 4       &kp 5  &kp 6  &kp 7       &kp 8       &kp 9      &kp 0            >;
+        };
+
+    nav {
+            bindings = <
+    &kp Q      &kp W      &kp E       &kp R       &kp T  &kp Y  &kp U       &kp I       &kp O      &kp P
+    &kp A      &kp S      &kp D       &kp F       &kp G  &kp H  &kp J       &kp K       &kp L      &kp RET
+    &kp Z      &kp X      &kp C       &kp V       &kp B  &kp N  &kp M       &kp COMMA   &kp DOT    &kp LSHFT
+    &kp 1      &kp 2      &kp 3       &kp 4       &kp 5  &kp 6  &kp 7       &kp 8       &kp 9      &kp 0            >;
+        };
+    };
+};

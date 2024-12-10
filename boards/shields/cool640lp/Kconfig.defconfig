@@ -1,4 +1,4 @@
-if SHIELD_cool640lp
+if SHIELD_COOL640LP
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME

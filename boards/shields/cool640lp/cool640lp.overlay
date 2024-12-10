@@ -30,23 +30,24 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9)
         wakeup-source;
 
         col-gpios
-            = <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
-            , <&gpio1 7  GPIO_ACTIVE_HIGH>
+            = <&gpio0 22  GPIO_ACTIVE_HIGH>
+            , <&gpio0 24  GPIO_ACTIVE_HIGH>
+            , <&gpio1 0  GPIO_ACTIVE_HIGH>
+            , <&gpio0 11  GPIO_ACTIVE_HIGH>
+            , <&gpio1 4  GPIO_ACTIVE_HIGH>
+            , <&gpio1 13  GPIO_ACTIVE_HIGH>
+            , <&gpio1 15  GPIO_ACTIVE_HIGH>
+            , <&gpio0 29  GPIO_ACTIVE_HIGH>
+            , <&gpio0 2  GPIO_ACTIVE_HIGH>
+            , <&gpio0 31  GPIO_ACTIVE_HIGH>
+           
             ;
 
         row-gpios
-            = <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            = <&gpi0 17  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 20  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 11  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 10  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             ;
     };
 };

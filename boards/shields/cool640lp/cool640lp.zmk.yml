@@ -2,6 +2,6 @@ file_format: "1"
 id: cool640lp
 name: cool640lp
 type: shield
-requires: [nice_nano_v2]
+requires: [pro_micro]
 features:
   - keys

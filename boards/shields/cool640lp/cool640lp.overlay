@@ -1,4 +1,4 @@
-#include "my_keyboard-layouts.dtsi"
+#include "cool640lp-layouts.dtsi"
 
 #include <dt-bindings/zmk/matrix_transform.h>
 

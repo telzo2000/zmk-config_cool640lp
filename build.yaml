@@ -18,8 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-board: [ "nice_nano_v2" ]
+board: [ "pro_micro" ]
 shield: [ "cool640lp" ]
 include:
-  - board: nice_nano_v2
+  - board: pro_micro
     shield: cool640lp 
